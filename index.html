@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link rel="icon" href="here comes the sun.png">
+    <script src="https://kit.fontawesome.com/e67809b257.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app-box">
+        <div id="search">
+            <input type="text" id="search-input" placeholder="Type your city">
+            <i id="search-icon" class="fa-solid fa-magnifying-glass fa-2xl"></i>
+        </div>
+
+        <div class="not-found-div">
+            <h1 class="not-found">City is not found :(</h1>
+        </div>
+        <div id="main-section">
+            <div id="main-info">
+
+                <div class="main-img">
+                    <img class="weatherImg" style="width: 150px;" src="here comes the sun.png" alt="today is sunny">
+                </div>
+
+                <h1 class="deg">2°C</h1>
+                <h1 class="city-name">Brooklyn Baby</h1>
+            </div>
+            <div id="aux-info">
+                <div class="humidity-wind">
+                    <div class="humidity-div">
+                        <i class="fa-solid fa-droplet fa-2xl"></i>
+
+                        <div class=text>
+                            <h1 class="humidity">63%</h1>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="wind-div">
+                        <i class="fa-solid fa-wind fa-2xl"></i>
+
+                        <div class="text">
+                            <h1 class="wind-speed">4 km/h</h1>
+                            <p>Wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="add">
+                <p id="test">Try "Los Angeles", "Paris" and not found</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

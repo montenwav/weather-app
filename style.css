@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #141414;
+}
+
+:root {
+    --color: black;
+    --bg-color: white;
+}
+
+.dark-mode {
+    --color: white;
+    --bg-color: black;
+} 
+
+.light-mode {
+    --color: white;
+    --bg-color: black;
+}
+
+i,
+p,
+h1 {
+    color: var(--color)
+}
+
+#app-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    border-radius: 25px;
+    background-color: var(--bg-color);
+    position: absolute;
+    background-size: contain;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+}
+
+@keyframes animationClose {
+    from {
+        height: 600px;
+    }
+
+    to {
+        heihgt: 200px;
+    }
+}
+
+.not-found {
+    margin-left: 40px;
+    margin-top: -15px;
+}
+
+.not-found-div {
+    display: none;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+#search-input {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+    font-size: 16px;
+    border: none;
+    margin-left: -25px;
+    padding: 16px 25px;
+    border-radius: 50px;
+    background: var(--color);
+    color: var(--bg-color);
+}
+
+#search-icon {
+    cursor: pointer;
+    margin-left: 25px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+}
+
+#main-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.humidity-wind {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    margin: auto;
+    margin-left: 58px;
+    max-width: 300px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.humidity-div,
+.wind-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.deg {
+    font-size: 55px;
+    margin-bottom: -20px;
+}
+
+.text p {
+    margin-top: -15px;
+}
+
+.text h1 {
+    font-size: 26px;
+}
+
+#test {
+    display: flex;
+    margin-top: -10px;
+    color: gray;
+}
+
+#add {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
